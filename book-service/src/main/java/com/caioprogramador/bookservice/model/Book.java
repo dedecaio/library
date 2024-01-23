@@ -1,9 +1,6 @@
 package com.caioprogramador.bookservice.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -14,11 +11,18 @@ public class Book implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Column(nullable = false, length = 180)
     private String author;
+    @Column(name = "launch_date", nullable = false)
+    @Temporal(TemporalType.DATE)
     private Date launchDate;
+    @Column(nullable = false)
     private Double price;
+    @Column(nullable = false, length = 250)
     private String title;
+    @Transient
     private String currency;
+    @Transient
     private String environment;
 
     public Book(Long id, String author, Date launchDate, Double price, String title, String currency, String environment) {
