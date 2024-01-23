@@ -50,9 +50,9 @@ public class BookController {
 
         Cambio cambio = response.getBody();*/
 
-        String port = environment.getProperty("local.server.port");
-        book.setEnvironment(port);
         assert cambio != null;
+        String port = environment.getProperty("local.server.port");
+        book.setEnvironment("Book port: "+port+" Cambio port: "+ cambio.getEnvironment());
         book.setPrice(cambio.getConvertedValue());
         book.setCurrency(currency);
         return ResponseEntity.ok(book);

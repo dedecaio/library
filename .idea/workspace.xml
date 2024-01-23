@@ -4,19 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="069a3ada-0369-4b60-9368-dc55b932ee5d" name="Changes" comment="First Commit, adding the services.">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-service/src/main/java/com/caioprogramador/bookservice/proxy/CambioProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-service/src/main/java/com/caioprogramador/bookservice/repository/BookRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-service/src/main/java/com/caioprogramador/bookservice/response/Cambio.java" afterDir="false" />
+    <list default="true" id="069a3ada-0369-4b60-9368-dc55b932ee5d" name="Changes" comment="Connecting book-service to database and with cambio-service">
+      <change afterPath="$PROJECT_DIR$/naming-server/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/naming-server/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/naming-server/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/naming-server/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/naming-server/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/naming-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/naming-server/src/main/java/com/caioprogramador/namingserver/NamingServerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/naming-server/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/naming-server/src/test/java/com/caioprogramador/namingserver/NamingServerApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-service/src/main/java/com/caioprogramador/bookservice/BookServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/java/com/caioprogramador/bookservice/BookServiceApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book-service/src/main/java/com/caioprogramador/bookservice/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/java/com/caioprogramador/bookservice/controller/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-service/src/main/java/com/caioprogramador/bookservice/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/java/com/caioprogramador/bookservice/model/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-service/src/main/java/com/caioprogramador/bookservice/proxy/CambioProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/java/com/caioprogramador/bookservice/proxy/CambioProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cambio-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cambio-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/greeting-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/greeting-service/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +64,13 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -82,17 +95,20 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.BookServiceApplication 8100.executor": "Run",
     "Spring Boot.BookServiceApplication 8101.executor": "Run",
     "Spring Boot.BookServiceApplication.executor": "Run",
     "Spring Boot.CambioServiceApplication 8000.executor": "Run",
     "Spring Boot.CambioServiceApplication 8001.executor": "Run",
+    "Spring Boot.CambioServiceApplication 8002.executor": "Run",
     "Spring Boot.CambioServiceApplication.executor": "Run",
     "Spring Boot.ConfigServerApplication.executor": "Run",
     "Spring Boot.GreetingServiceApplication.executor": "Run",
+    "Spring Boot.NamingServerApplication.executor": "Run",
     "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "corretto-17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/caio/Downloads/V2__Insert_Data_In_Books.sql",
+    "last_opened_file_path": "/home/caio/Documents/projects/microservices-course/naming-server",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -129,11 +145,20 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.BookServiceApplication">
-    <configuration name="BookServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+  <component name="RunManager" selected="Spring Boot.CambioServiceApplication 8002">
+    <configuration name="BookServiceApplication 8100" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="book-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.caioprogramador.bookservice.BookServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookServiceApplication 8101" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="book-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.caioprogramador.bookservice.BookServiceApplication" />
+      <option name="VM_PARAMETERS" value="-Dserver.port=8101" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -165,6 +190,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CambioServiceApplication 8002" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="cambio-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.caioprogramador.cambioservice.CambioServiceApplication" />
+      <option name="VM_PARAMETERS" value="-Dserver.port=8002" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.caioprogramador.cambioservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GreetingServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="greeting-service" />
@@ -173,10 +212,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="NamingServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="naming-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.caioprogramador.namingserver.NamingServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
+      <item itemvalue="Spring Boot.NamingServerApplication" />
       <item itemvalue="Spring Boot.GreetingServiceApplication" />
       <item itemvalue="Spring Boot.CambioServiceApplication 8001" />
-      <item itemvalue="Spring Boot.BookServiceApplication" />
+      <item itemvalue="Spring Boot.CambioServiceApplication 8002" />
+      <item itemvalue="Spring Boot.BookServiceApplication 8100" />
+      <item itemvalue="Spring Boot.BookServiceApplication 8101" />
       <item itemvalue="Spring Boot.CambioServiceApplication 8000" />
     </list>
     <recent_temporary>
@@ -207,7 +256,7 @@
       <workItem from="1705699408192" duration="40000" />
       <workItem from="1705852099342" duration="70000" />
       <workItem from="1705852183384" duration="524000" />
-      <workItem from="1706007794727" duration="3242000" />
+      <workItem from="1706007794727" duration="4593000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit, adding the services.">
       <option name="closed" value="true" />
@@ -217,7 +266,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705852583828</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Connecting book-service to database and with cambio-service">
+      <option name="closed" value="true" />
+      <created>1706011262654</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1706011262654</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,6 +283,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="First Commit, adding the services." />
-    <option name="LAST_COMMIT_MESSAGE" value="First Commit, adding the services." />
+    <MESSAGE value="Connecting book-service to database and with cambio-service" />
+    <option name="LAST_COMMIT_MESSAGE" value="Connecting book-service to database and with cambio-service" />
   </component>
 </project>
