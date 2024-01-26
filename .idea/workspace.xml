@@ -4,25 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="069a3ada-0369-4b60-9368-dc55b932ee5d" name="Changes" comment="Connecting book-service to database and with cambio-service">
-      <change afterPath="$PROJECT_DIR$/naming-server/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/naming-server/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/naming-server/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/naming-server/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/naming-server/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/naming-server/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/naming-server/src/main/java/com/caioprogramador/namingserver/NamingServerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/naming-server/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/naming-server/src/test/java/com/caioprogramador/namingserver/NamingServerApplicationTests.java" afterDir="false" />
+    <list default="true" id="069a3ada-0369-4b60-9368-dc55b932ee5d" name="Changes" comment="Creating the naming-server">
+      <change afterPath="$PROJECT_DIR$/api-gateway/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/caioprogramador/apigateway/ApiGatewayApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/caioprogramador/apigateway/configuration/APIGatewayConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/src/test/java/com/caioprogramador/apigateway/ApiGatewayApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-service/src/main/java/com/caioprogramador/bookservice/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/java/com/caioprogramador/bookservice/controller/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-service/src/main/java/com/caioprogramador/bookservice/proxy/CambioProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/java/com/caioprogramador/bookservice/proxy/CambioProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cambio-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cambio-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/greeting-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/greeting-service/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,6 +91,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.ApiGatewayApplication.executor": "Run",
     "Spring Boot.BookServiceApplication 8100.executor": "Run",
     "Spring Boot.BookServiceApplication 8101.executor": "Run",
     "Spring Boot.BookServiceApplication.executor": "Run",
@@ -108,7 +105,7 @@
     "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "corretto-17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/caio/Documents/projects/microservices-course/naming-server",
+    "last_opened_file_path": "/home/caio/Documents/projects/microservices-course/api-gateway",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -139,13 +136,22 @@
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
+        <option value="Application" />
         <option value="MicronautRunConfigurationType" />
         <option value="QuarkusRunConfigurationType" />
         <option value="SpringBootApplicationConfigurationType" />
       </set>
     </option>
+    <option name="openRunningConfigInTab" value="true" />
   </component>
-  <component name="RunManager" selected="Spring Boot.CambioServiceApplication 8002">
+  <component name="RunManager" selected="Spring Boot.ApiGatewayApplication">
+    <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="api-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.caioprogramador.apigateway.ApiGatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BookServiceApplication 8100" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="book-service" />
@@ -220,6 +226,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Spring Boot.ApiGatewayApplication" />
       <item itemvalue="Spring Boot.NamingServerApplication" />
       <item itemvalue="Spring Boot.GreetingServiceApplication" />
       <item itemvalue="Spring Boot.CambioServiceApplication 8001" />
@@ -256,7 +263,8 @@
       <workItem from="1705699408192" duration="40000" />
       <workItem from="1705852099342" duration="70000" />
       <workItem from="1705852183384" duration="524000" />
-      <workItem from="1706007794727" duration="4593000" />
+      <workItem from="1706007794727" duration="6167000" />
+      <workItem from="1706093982588" duration="2219000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit, adding the services.">
       <option name="closed" value="true" />
@@ -274,7 +282,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706011262654</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Creating the naming-server">
+      <option name="closed" value="true" />
+      <created>1706012691347</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1706012691347</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,6 +300,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="First Commit, adding the services." />
     <MESSAGE value="Connecting book-service to database and with cambio-service" />
-    <option name="LAST_COMMIT_MESSAGE" value="Connecting book-service to database and with cambio-service" />
+    <MESSAGE value="Creating the naming-server" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creating the naming-server" />
   </component>
 </project>
