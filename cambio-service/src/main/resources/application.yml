@@ -11,3 +11,10 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: false
+
+springdoc:
+  api-docs:
+    path: cambio-service/v3/api-docs
+  swagger-ui:
+    config-url: /cambio-service/v3/api-docs/swagger-config
+    url: /cambio-service/v3/api-docs
