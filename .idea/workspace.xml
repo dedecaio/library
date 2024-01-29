@@ -4,21 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="069a3ada-0369-4b60-9368-dc55b932ee5d" name="Changes" comment="Resilience4j with bulkhead and ratelimiter">
-      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/caioprogramador/apigateway/configuration/OpenApiConfiguration.java" afterDir="false" />
+    <list default="true" id="069a3ada-0369-4b60-9368-dc55b932ee5d" name="Changes" comment="Documentation of API">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/com/caioprogramador/apigateway/ApiGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/caioprogramador/apigateway/ApiGatewayApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/com/caioprogramador/apigateway/configuration/APIGatewayConfiguration.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-service/src/main/java/com/caioprogramador/bookservice/BookServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/java/com/caioprogramador/bookservice/BookServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-service/src/main/java/com/caioprogramador/bookservice/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/java/com/caioprogramador/bookservice/controller/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-service/src/main/java/com/caioprogramador/bookservice/controller/FooBarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/java/com/caioprogramador/bookservice/controller/FooBarController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cambio-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cambio-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cambio-service/src/main/java/com/caioprogramador/cambioservice/CambioServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/cambio-service/src/main/java/com/caioprogramador/cambioservice/CambioServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cambio-service/src/main/java/com/caioprogramador/cambioservice/controller/CambioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cambio-service/src/main/java/com/caioprogramador/cambioservice/controller/CambioController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cambio-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cambio-service/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -271,7 +263,7 @@
       <workItem from="1706093982588" duration="2219000" />
       <workItem from="1706266608798" duration="3045000" />
       <workItem from="1706289334055" duration="4994000" />
-      <workItem from="1706528402444" duration="3138000" />
+      <workItem from="1706528402444" duration="5310000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit, adding the services.">
       <option name="closed" value="true" />
@@ -329,7 +321,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706269585003</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Documentation of API">
+      <option name="closed" value="true" />
+      <created>1706550237132</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1706550237132</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -344,6 +344,7 @@
     <MESSAGE value="Resilience4j with retry" />
     <MESSAGE value="Resilience4j with circuitBreaker" />
     <MESSAGE value="Resilience4j with bulkhead and ratelimiter" />
-    <option name="LAST_COMMIT_MESSAGE" value="Resilience4j with bulkhead and ratelimiter" />
+    <MESSAGE value="Documentation of API" />
+    <option name="LAST_COMMIT_MESSAGE" value="Documentation of API" />
   </component>
 </project>
