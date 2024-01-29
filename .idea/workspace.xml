@@ -4,14 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="069a3ada-0369-4b60-9368-dc55b932ee5d" name="Changes" comment="Documentation of API">
+    <list default="true" id="069a3ada-0369-4b60-9368-dc55b932ee5d" name="Changes" comment="Zipkin">
+      <change afterPath="$PROJECT_DIR$/book-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cambio-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cambio-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cambio-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cambio-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cambio-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/naming-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/naming-server/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +82,15 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Gradle.Build book-service.executor": "Run",
+    "Maven.book-service [clean].executor": "Run",
+    "Maven.book-service [package].executor": "Run",
     "Maven.cambio-service [clean].executor": "Run",
+    "Maven.naming-server [clean].executor": "Run",
+    "Maven.naming-server [compile].executor": "Run",
+    "Maven.naming-server [deploy].executor": "Run",
+    "Maven.naming-server [package].executor": "Run",
+    "Maven.naming-server [site].executor": "Run",
+    "Maven.naming-server [verify].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -101,14 +112,14 @@
     "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "corretto-17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/caio/Documents/projects/hello-docker-before/java-spring-boot-before",
+    "last_opened_file_path": "/home/caio/Downloads/V1__Create_Table_Books.sql",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.importing",
+    "settings.editor.selected.configurable": "MavenSettings",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -119,6 +130,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/book-service" />
       <recent name="$PROJECT_DIR$/greeting-service/src/main/java/com/caioprogramador/greetingservice/controller" />
       <recent name="$PROJECT_DIR$/greeting-service/src/main/java/com/caioprogramador/greetingservice/model" />
     </key>
@@ -263,7 +275,8 @@
       <workItem from="1706093982588" duration="2219000" />
       <workItem from="1706266608798" duration="3045000" />
       <workItem from="1706289334055" duration="4994000" />
-      <workItem from="1706528402444" duration="5310000" />
+      <workItem from="1706528402444" duration="5354000" />
+      <workItem from="1706561027967" duration="7291000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit, adding the services.">
       <option name="closed" value="true" />
@@ -329,7 +342,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706550237132</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Zipkin">
+      <option name="closed" value="true" />
+      <created>1706552265931</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1706552265931</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -345,6 +366,7 @@
     <MESSAGE value="Resilience4j with circuitBreaker" />
     <MESSAGE value="Resilience4j with bulkhead and ratelimiter" />
     <MESSAGE value="Documentation of API" />
-    <option name="LAST_COMMIT_MESSAGE" value="Documentation of API" />
+    <MESSAGE value="Zipkin" />
+    <option name="LAST_COMMIT_MESSAGE" value="Zipkin" />
   </component>
 </project>
