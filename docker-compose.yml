@@ -1,9 +1,22 @@
 version: '3.4'
 services:
-  zipkin:
+  zipkin-server:
     image: openzipkin/zipkin:2.23.2
     ports:
       - 9411:9411
+    depends_on:
+      - rabbit-mq
+    restart: always
+    environment:
+      RABBIT_URI: amqp://guest:guest@rabbit-mq:5672
+    networks:
+      - caioprog-network
+
+  rabbit-mq:
+    image: rabbitmq:3.8.14-management
+    ports:
+      - 5672:5672
+      - 15672:15672
     networks:
       - caioprog-network
 
@@ -62,11 +75,15 @@ services:
       - 8765:8765
     depends_on:
       - naming-server
+      - rabbit-mq
     environment:
       SPRING.APLICATION.NAME: api-gateway
       SPRING_APPLICATION_JSON: '{"eureka":{"client":{"serviceUrl":{"defaultZone":"http://naming-server:8761/eureka"}}}}'
       EUREKA.CLIENT.SERVICEURL.DEFAULTZONE: http://naming-server:8761/eureka
-      SPRING.ZIPKIN.BASEURL: http://zipkin:9411/
+      SPRING.ZIPKIN.BASEURL: http://zipkin-server:9411/
+      RABBIT_URI: amqp://guest:guest@rabbit-mq:5672
+      SPRING_RABBITMQ_HOST: rabbit-mq
+      SPRING_ZIPKIN_SENDER_TYPE: rabbit
     networks:
       - caioprog-network
 
@@ -85,11 +102,18 @@ services:
       SPRING.DATASOURCE.URL: jdbc:mysql://cambio-db:3308/cambio-service?useSSL=false&serverTimezone=UTC&enabledTLSProtocols=TLSv1.2
       SPRING.DATASOURCE.USERNAME: root
       SPRING.DATASOURCE.PASSWORD: 1804
+      SPRING.FLYWAY.URL: jdbc:mysql://cambio-db:3308/cambio-service?useSSL=false&serverTimezone=UTC&enabledTLSProtocols=TLSv1.2
+      SPRING.FLYWAY.USER: root
+      SPRING.FLYWAY.PASSWORD: 1804
+      RABBIT_URI: amqp://guest:guest@rabbit-mq:5672
+      SPRING_RABBITMQ_HOST: rabbit-mq
+      SPRING_ZIPKIN_SENDER_TYPE: rabbit
     ports:
       - 8000:8000
     depends_on:
       - naming-server
       - cambio-db
+      - rabbit-mq
     networks:
       - caioprog-network
 
@@ -108,12 +132,19 @@ services:
       SPRING.DATASOURCE.URL: jdbc:mysql://book-db:3310/book-service?useSSL=false&serverTimezone=UTC&enabledTLSProtocols=TLSv1.2
       SPRING.DATASOURCE.USERNAME: root
       SPRING.DATASOURCE.PASSWORD: 1804
+      SPRING.FLYWAY.URL: jdbc:mysql://book-db:3310/book-service?useSSL=false&serverTimezone=UTC&enabledTLSProtocols=TLSv1.2
+      SPRING.FLYWAY.USER: root
+      SPRING.FLYWAY.PASSWORD: 1804
+      RABBIT_URI: amqp://guest:guest@rabbit-mq:5672
+      SPRING_RABBITMQ_HOST: rabbit-mq
+      SPRING_ZIPKIN_SENDER_TYPE: rabbit
     ports:
       - 8100:8100
     depends_on:
       - naming-server
       - cambio-service
       - book-db
+      - rabbit-mq
     networks:
       - caioprog-network
 
