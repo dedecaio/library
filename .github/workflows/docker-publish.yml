@@ -17,6 +17,6 @@ jobs:
         uses: docker/login-action@v3.0.0
         with:
           Username: ${{secrets.DOCKER_USERNAME}}
-          Password: ${{secrets.DOCKER_PASSWORD}}
+          password: ${{secrets.DOCKER_PASSWORD}}
           ecr: auto
           logout: true
