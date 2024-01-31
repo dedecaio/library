@@ -63,14 +63,14 @@ services:
       - caioprog-network
 
   naming-server:
-    image: caioprog/naming-server:0.0.1-SNAPSHOT
+    image: caioprog/naming-server:latest
     ports:
       - 8761:8761
     networks:
       - caioprog-network
 
   api-gateway:
-    image: caioprog/api-gateway:0.0.1-SNAPSHOT
+    image: caioprog/api-gateway:latest
     ports:
       - 8765:8765
     depends_on:
@@ -88,11 +88,8 @@ services:
       - caioprog-network
 
   cambio-service:
-    image: caioprog/cambio-service
+    image: caioprog/cambio-service:latest
     restart: always
-    build:
-      context: .
-      dockerfile: cambio-service/Dockerfile
     environment:
       TZ: America/Sao_Paulo
       SPRING.APLICATION.NAME: cambio-service
@@ -118,11 +115,8 @@ services:
       - caioprog-network
 
   book-service:
-    image: caioprog/book-service
+    image: caioprog/book-service:latest
     restart: always
-    build:
-      context: .
-      dockerfile: book-service/Dockerfile
     environment:
       TZ: America/Sao_Paulo
       SPRING.APLICATION.NAME: book-service
