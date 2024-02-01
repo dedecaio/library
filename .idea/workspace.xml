@@ -4,10 +4,43 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="069a3ada-0369-4b60-9368-dc55b932ee5d" name="Changes" comment="Preparing Docker Compose to be used in another device">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="069a3ada-0369-4b60-9368-dc55b932ee5d" name="Changes" comment="Creating the README.md to the project">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/1b46fdbd-1a9f-4f93-9fb7-6abc5b21746b.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/1b46fdbd-1a9f-4f93-9fb7-6abc5b21746b/storage_v2/_src_/schema/book-service.0et1Hg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/1b46fdbd-1a9f-4f93-9fb7-6abc5b21746b/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/1b46fdbd-1a9f-4f93-9fb7-6abc5b21746b/storage_v2/_src_/schema/information_schema.FNRwLQ.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/1b46fdbd-1a9f-4f93-9fb7-6abc5b21746b/storage_v2/_src_/schema/mysql.osA4Bg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/1b46fdbd-1a9f-4f93-9fb7-6abc5b21746b/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/1b46fdbd-1a9f-4f93-9fb7-6abc5b21746b/storage_v2/_src_/schema/sys.zb4BAA.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/1b46fdbd-1a9f-4f93-9fb7-6abc5b21746b/storage_v2/_src_/schema/sys.zb4BAA.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/8a6cddfb-c794-40eb-a9f7-34addc9ad558.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/8a6cddfb-c794-40eb-a9f7-34addc9ad558/storage_v2/_src_/schema/book-service.0et1Hg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/8a6cddfb-c794-40eb-a9f7-34addc9ad558/storage_v2/_src_/schema/cambio-service.wXc-Mw.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/8a6cddfb-c794-40eb-a9f7-34addc9ad558/storage_v2/_src_/schema/challenge03_ms_orders.RWQlYw.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/8a6cddfb-c794-40eb-a9f7-34addc9ad558/storage_v2/_src_/schema/challenge03_ms_products.xPr2qQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/8a6cddfb-c794-40eb-a9f7-34addc9ad558/storage_v2/_src_/schema/challenge03_ms_users.qODqjw.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/8a6cddfb-c794-40eb-a9f7-34addc9ad558/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/8a6cddfb-c794-40eb-a9f7-34addc9ad558/storage_v2/_src_/schema/information_schema.FNRwLQ.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/8a6cddfb-c794-40eb-a9f7-34addc9ad558/storage_v2/_src_/schema/mysql.osA4Bg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/8a6cddfb-c794-40eb-a9f7-34addc9ad558/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/8a6cddfb-c794-40eb-a9f7-34addc9ad558/storage_v2/_src_/schema/rest_with_spring_boot.9vDjBg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/8a6cddfb-c794-40eb-a9f7-34addc9ad558/storage_v2/_src_/schema/sys.zb4BAA.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/8a6cddfb-c794-40eb-a9f7-34addc9ad558/storage_v2/_src_/schema/sys.zb4BAA.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/bea92e71-795e-421d-9ace-f13f2dabcba0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/bea92e71-795e-421d-9ace-f13f2dabcba0/storage_v2/_src_/schema/cambio-service.wXc-Mw.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/bea92e71-795e-421d-9ace-f13f2dabcba0/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/bea92e71-795e-421d-9ace-f13f2dabcba0/storage_v2/_src_/schema/information_schema.FNRwLQ.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/bea92e71-795e-421d-9ace-f13f2dabcba0/storage_v2/_src_/schema/mysql.osA4Bg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/bea92e71-795e-421d-9ace-f13f2dabcba0/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/bea92e71-795e-421d-9ace-f13f2dabcba0/storage_v2/_src_/schema/sys.zb4BAA.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/bea92e71-795e-421d-9ace-f13f2dabcba0/storage_v2/_src_/schema/sys.zb4BAA.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/.attach_pid13293" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cambio-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cambio-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +108,7 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Gradle.Build book-service.executor": "Run",
+    "Maven.api-gateway [clean].executor": "Run",
     "Maven.book-service [clean].executor": "Run",
     "Maven.book-service [package].executor": "Run",
     "Maven.cambio-service [clean].executor": "Run",
@@ -278,7 +312,9 @@
       <workItem from="1706561027967" duration="7668000" />
       <workItem from="1706613565499" duration="4318000" />
       <workItem from="1706640116035" duration="3961000" />
-      <workItem from="1706724501247" duration="4853000" />
+      <workItem from="1706724501247" duration="5790000" />
+      <workItem from="1706735611214" duration="2000" />
+      <workItem from="1706785803264" duration="770000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit, adding the services.">
       <option name="closed" value="true" />
@@ -384,7 +420,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706731699042</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Creating the README.md to the project">
+      <option name="closed" value="true" />
+      <created>1706734655949</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1706734655949</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -415,6 +459,7 @@
     <MESSAGE value="Dockerizing all" />
     <MESSAGE value="Fixed bugs with docker and using Flyway to create and populate the database" />
     <MESSAGE value="Preparing Docker Compose to be used in another device" />
-    <option name="LAST_COMMIT_MESSAGE" value="Preparing Docker Compose to be used in another device" />
+    <MESSAGE value="Creating the README.md to the project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creating the README.md to the project" />
   </component>
 </project>
