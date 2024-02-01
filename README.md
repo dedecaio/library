@@ -19,6 +19,6 @@ But, don't forget to install that requirements to run the application:
 You will probably have to change the root user's password in each microservice's application.yml.
 
 After installed all, just open the project at the IDE and run the naming-server, cambio-service, book-service, greeting-service and api-gateway.
-Running the application, you can also check the documentation to view the endpoints by clicking [here](http://localhost:8765/swagger-ui.html).
+Running the application, you can also check the documentation to view the endpoints by clicking [cambio-service documentation](http://localhost:8000/swagger-ui.html) or [book-service documentation](http://localhost:8100/swagger-ui.html).
 
 If you have any question, please call me via email: [caio.florees2005@gmail.com]()
