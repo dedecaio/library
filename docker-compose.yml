@@ -10,9 +10,9 @@ services:
       - naming-server
     environment:
       TZ: America/Sao_Paulo
-      MYSQL_ROOT_PASSWORD: 1804
+      MYSQL_ROOT_PASSWORD: 1234
       MYSQL_USER: docker
-      MYSQL_PASSWORD: 1804
+      MYSQL_PASSWORD: 1234
       MYSQL_DATABASE: cambio-service
       MYSQL_ROOT_HOST: '%'
       MYSQL_TCP_PORT: 3308
@@ -31,9 +31,9 @@ services:
       - naming-server
     environment:
       TZ: America/Sao_Paulo
-      MYSQL_ROOT_PASSWORD: 1804
+      MYSQL_ROOT_PASSWORD: 1234
       MYSQL_USER: docker
-      MYSQL_PASSWORD: 1804
+      MYSQL_PASSWORD: 1234
       MYSQL_DATABASE: book-service
       MYSQL_ROOT_HOST: '%'
       MYSQL_TCP_PORT: 3310
@@ -73,10 +73,10 @@ services:
       EUREKA.CLIENT.SERVICEURL.DEFAULTZONE: http://naming-server:8761/eureka
       SPRING.DATASOURCE.URL: jdbc:mysql://cambio-db:3308/cambio-service?useSSL=false&serverTimezone=UTC&enabledTLSProtocols=TLSv1.2
       SPRING.DATASOURCE.USERNAME: root
-      SPRING.DATASOURCE.PASSWORD: 1804
+      SPRING.DATASOURCE.PASSWORD: 1234
       SPRING.FLYWAY.URL: jdbc:mysql://cambio-db:3308/cambio-service?useSSL=false&serverTimezone=UTC&enabledTLSProtocols=TLSv1.2
       SPRING.FLYWAY.USER: root
-      SPRING.FLYWAY.PASSWORD: 1804
+      SPRING.FLYWAY.PASSWORD: 1234
     ports:
       - 8000:8000
     depends_on:
@@ -95,10 +95,10 @@ services:
       EUREKA.CLIENT.SERVICEURL.DEFAULTZONE: http://naming-server:8761/eureka
       SPRING.DATASOURCE.URL: jdbc:mysql://book-db:3310/book-service?useSSL=false&serverTimezone=UTC&enabledTLSProtocols=TLSv1.2
       SPRING.DATASOURCE.USERNAME: root
-      SPRING.DATASOURCE.PASSWORD: 1804
+      SPRING.DATASOURCE.PASSWORD: 1234
       SPRING.FLYWAY.URL: jdbc:mysql://book-db:3310/book-service?useSSL=false&serverTimezone=UTC&enabledTLSProtocols=TLSv1.2
       SPRING.FLYWAY.USER: root
-      SPRING.FLYWAY.PASSWORD: 1804
+      SPRING.FLYWAY.PASSWORD: 1234
     ports:
       - 8100:8100
     depends_on:
