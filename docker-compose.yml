@@ -59,6 +59,7 @@ services:
       SPRING.APLICATION.NAME: api-gateway
       SPRING_APPLICATION_JSON: '{"eureka":{"client":{"serviceUrl":{"defaultZone":"http://naming-server:8761/eureka"}}}}'
       EUREKA.CLIENT.SERVICEURL.DEFAULTZONE: http://naming-server:8761/eureka
+      SERVER_SERVLET_CONTEXTPATH: /
     networks:
       - caioprog-network
 
